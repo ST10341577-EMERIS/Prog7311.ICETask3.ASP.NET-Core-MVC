@@ -1,31 +1,94 @@
-html {
-  font-size: 14px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-@media (min-width: 768px) {
-  html {
+html {
     font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; 
+    color: #2b2b2b;
+    margin-bottom: 60px;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+
+.hero-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f1f1;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+    .hero-section h1 {
+        color: #1a1a1a;
+        letter-spacing: -1px;
+    }
+
+.feature-box {
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eaeaea;
+    height: 100%;
+}
+
+
+    .feature-box:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+    }
+
+
+.custom-btn {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .custom-btn:hover {
+        background-color: #0b5ed7;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3) !important;
+    }
+
+    .custom-btn:active {
+        transform: translateY(0);
+    }
+
+
+.table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    margin-top: 20px;
+}
+
+    .table th {
+        background-color: #f1f3f5;
+        border-bottom: 2px solid #dee2e6;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+        color: #6c757d;
+        padding: 15px;
+    }
+
+    .table td {
+        vertical-align: middle;
+        padding: 15px;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+
+.alert-warning {
+    border-radius: 8px;
+    border: none;
+    background-color: #fff3cd;
+    color: #856404;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
