@@ -1,3 +1,5 @@
+using EcommerceMvcApp.Services;
+
 namespace EcommerceMvcApp
 {
     public class Program
@@ -8,7 +10,9 @@ namespace EcommerceMvcApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddSingleton<ProductRepository>();
+            builder.Services.AddSingleton<OrderService>();
+            builder.Services.AddSingleton<CartService>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
